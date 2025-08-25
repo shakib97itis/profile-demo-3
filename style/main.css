@@ -48,6 +48,10 @@
 }
 
 /* === BASE STYLES START === */
+html {
+  scroll-behavior: smooth;
+}
+
 .container-fluid {
   width: 100%;
   padding-right: 1.5rem;
