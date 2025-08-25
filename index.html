@@ -14,7 +14,7 @@
   <body>
     <!-- navber started -->
     <nav
-      class="sticky top-0 z-50 w-full py-3 bg-tertiary border-b-2 border-black/20 shadow-lg"
+      class="sticky top-0 z-50 w-full py-3 bg-tertiary border-b-2 border-Black/20 shadow-lg"
     >
       <div class="container-fluid">
         <div class="w-full flex items-center justify-between">
@@ -60,15 +60,16 @@
             </ul>
             <!-- Light/Dark mode icon -->
             <button
+              id="theme-toggle"
               class="text-md py-1 px-2 text-white rounded-lg border border-white/40 cursor-pointer"
             >
-              <i class="fa-solid fa-sun"></i>
+              <i id="theme-icon" class="fa-solid fa-sun"></i>
             </button>
 
             <!-- Mobile Menu Button -->
             <button
               id="menu-btn"
-              class="md:hidden text-md text-black py-1 px-2 rounded-lg border border-white/40 cursor-pointer"
+              class="md:hidden text-md text-Black py-1 px-2 rounded-lg border border-white/40 cursor-pointer"
             >
               <span id="open-icon" class="text-white">
                 <i class="fa-solid fa-bars"></i>
@@ -100,23 +101,23 @@
     <!-- navber ended -->
 
     <!-- hero section started -->
-    <section class="bg-white py-15">
+    <section class="bg-White py-15">
       <div
         class="container-fluid flex flex-col md:flex-row md:justify-between md:items-center gap-8"
       >
         <!-- Left Text Content (50%) -->
         <div class="w-full md:w-1/2">
           <span
-            class="inline-block bg-tertiary/20 text-quaternary px-3 py-1 rounded-full text-sm border border-secondary"
+            class="inline-block bg-tertiary/20 text-quaternary px-3 py-1 rounded-full text-sm border border-tertiary"
           >
             ডাকসু ২০২৫ প্রার্থী
           </span>
 
           <h1
-            class="text-3xl md:text-5xl font-bold leading-snug font-primary mt-4 text-black"
+            class="text-3xl md:text-5xl font-bold leading-snug font-primary mt-4 text-Black"
           >
             ঢাকা বিশ্ববিদ্যালয়ের জন্য <br />
-            <span class="text-[var(--color-tertiary)]">ডিজিটাল ভবিষ্যৎ</span>
+            <span class="text-tertiary">ডিজিটাল ভবিষ্যৎ</span>
           </h1>
 
           <p class="mt-4 text-neutral-1 font-secondary">
@@ -139,7 +140,7 @@
 
             <a
               href="./about.html"
-              class="flex items-center gap-2 border-2 border-tertiary text-tertiary px-5 py-2 rounded-lg hover:bg-tertiary hover:text-white transition"
+              class="flex items-center gap-2 border-2 border-tertiary text-tertiary px-5 py-2 rounded-lg hover:bg-tertiary hover:text-White transition"
             >
               <i class="fa-solid fa-user"></i> আমার সম্পর্কে জানুন
             </a>
@@ -155,9 +156,9 @@
     <!-- hero section ended -->
 
     <!-- prommiss section started -->
-    <section class="py-15 bg-white">
+    <section class="py-15 bg-White">
       <div class="container-fluid">
-        <h1 class="text-3xl font-bold text-center mb-4">
+        <h1 class="text-3xl font-bold text-Black text-center mb-4">
           ঢাকা বিশ্ববিদ্যালয়ের জন্য আমার কাজ
         </h1>
         <p class="text-center text-gray-600 mb-10">
@@ -169,7 +170,7 @@
         <div class="flex flex-col md:flex-row gap-8">
           <!-- Card 1 -->
           <div
-            class="bg-gray-100 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300 flex flex-col h-full border border-black/20 flex-1"
+            class="bg-Gray-100 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300 flex flex-col h-full border border-Black/20 flex-1"
           >
             <div class="p-6 flex-grow flex flex-col items-center">
               <span
@@ -177,7 +178,7 @@
               >
                 <i class="fa-solid fa-book-open"></i>
               </span>
-              <h2 class="text-lg font-bold mb-3 text-center">
+              <h2 class="text-Black font-bold mb-3 text-center">
                 নতুন ক্যান্টিনের জন্য উদ্যোগ
               </h2>
               <p class="text-gray-600 text-sm text-justify">
@@ -195,7 +196,7 @@
 
           <!-- Card 2 -->
           <div
-            class="bg-gray-100 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300 flex flex-col h-full border border-black/20 flex-1"
+            class="bg-Gray-100 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300 flex flex-col h-full border border-Black/20 flex-1"
           >
             <div class="p-6 flex-grow flex flex-col items-center">
               <span
@@ -203,7 +204,7 @@
               >
                 <i class="fa-solid fa-people-group"></i>
               </span>
-              <h2 class="text-lg font-bold mb-3 text-center">
+              <h2 class="text-lg text-Black font-bold mb-3 text-center">
                 ক্যারিয়ার ও সিভি কর্মশালা
               </h2>
               <p class="text-gray-600 text-sm text-justify">
@@ -221,7 +222,7 @@
 
           <!-- Card 3 -->
           <div
-            class="bg-gray-100 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300 flex flex-col h-full border border-black/20 flex-1"
+            class="bg-Gray-100 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300 flex flex-col h-full border border-Black/20 flex-1"
           >
             <div class="p-6 flex-grow flex flex-col items-center">
               <span
@@ -229,7 +230,7 @@
               >
                 <i class="fa-solid fa-graduation-cap"></i>
               </span>
-              <h2 class="text-lg font-bold mb-3 text-center">
+              <h2 class="text-lg text-Black font-bold mb-3 text-center">
                 ডিজিটাল ঢাকা বিশ্ববিদ্যালয়ের পক্ষে প্রচেষ্টা
               </h2>
               <p class="text-gray-600 text-sm text-justify">
@@ -331,7 +332,7 @@
         <!-- Button -->
         <div class="text-center mt-8">
           <button
-            class="bg-white text-tertiary px-6 py-2 rounded-full font-semibold shadow hover:bg-gray-100 transition"
+            class="bg-white text-tertiary px-6 py-2 rounded-full font-semibold shadow hover:bg-Gray-100 transition"
           >
             বিস্তারিত পড়ুন
           </button>
@@ -341,43 +342,43 @@
     <!-- achievement section ended -->
 
     <!-- Footer Section started -->
-    <footer class="bg-gray-100 py-8">
+    <footer class="bg-Gray-100 py-8">
       <div class="container-fluid">
         <div class="flex flex-col md:flex-row justify-between md:text-left">
           <!-- Left -->
           <div class="mb-8 md:mb-0">
-            <h3 class="text-lg font-bold text-gray-800 mb-4">
+            <h3 class="text-lg font-bold text-Black mb-4">
               আহাদ বিন ইসলাম শোয়ের
             </h3>
             <div class="flex flex-col gap-1">
-              <p class="text-gray-600 hover:text-black">
+              <p class="text-gray-600 hover:text-Black">
                 যুব নেতা, নীতিনির্ধারক, গবেষক, প্রকৌশলী
               </p>
-              <p class="text-gray-600 hover:text-black">
+              <p class="text-gray-600 hover:text-Black">
                 বিজ্ঞান ও প্রযুক্তি সম্পাদক পদে প্রার্থী, ডাকসু ২০২৫
               </p>
             </div>
           </div>
 
           <div class="mb-8 md:mb-0">
-            <h4 class="font-semibold text-gray-800 mb-4">লিংকসমূহ</h4>
+            <h4 class="font-semibold text-Black mb-4">লিংকসমূহ</h4>
             <ul class="flex flex-col text-gray-600 space-y-1">
               <a
-                class="font-secondary text-gray-600 hover:text-black"
+                class="font-secondary text-gray-600 hover:text-Black"
                 href="./index.html"
                 >প্রোফাইল</a
               >
               <a
-                class="font-secondary text-gray-600 hover:text-black"
+                class="font-secondary text-gray-600 hover:text-Black"
                 href="./about.html"
                 >সম্পর্কে</a
               >
               <a
-                class="font-secondary text-gray-600 hover:text-black"
+                class="font-secondary text-gray-600 hover:text-Black"
                 href="./prommiss.html"
                 >ইশতেহার</a
               >
-              <a class="font-secondary text-gray-600 hover:text-black" href="#"
+              <a class="font-secondary text-gray-600 hover:text-Black" href="#"
                 >অ্যচিভমেন্ট</a
               >
             </ul>
@@ -385,19 +386,19 @@
 
           <!-- Middle -->
           <div class="mb-8 md:mb-0">
-            <h4 class="font-semibold text-gray-800 mb-4">যোগাযোগের তথ্য</h4>
+            <h4 class="font-semibold text-Black mb-4">যোগাযোগের তথ্য</h4>
             <p class="text-gray-600">ফজলুল হক মুসলিম হল, ঢাকা বিশ্ববিদ্যালয়</p>
             <p class="text-gray-600">ahadbinislam1111@gmail.com</p>
             <p class="text-gray-600">+880 1798 343401</p>
           </div>
           <!-- Right -->
           <div class="pr-20">
-            <h4 class="font-semibold text-gray-800 mb-4">কিছু লিংক</h4>
+            <h4 class="font-semibold text-Black mb-4">কিছু লিংক</h4>
             <ul class="text-gray-600 space-y-1">
-              <li><a href="#" class="hover:text-black">গবেষণা</a></li>
-              <li><a href="#" class="hover:text-black">নীতিনির্ধারণ</a></li>
-              <li><a href="#" class="hover:text-black">শিক্ষা</a></li>
-              <li><a href="#" class="hover:text-black">যোগাযোগ</a></li>
+              <li><a href="#" class="hover:text-Black">গবেষণা</a></li>
+              <li><a href="#" class="hover:text-Black">নীতিনির্ধারণ</a></li>
+              <li><a href="#" class="hover:text-Black">শিক্ষা</a></li>
+              <li><a href="#" class="hover:text-Black">যোগাযোগ</a></li>
             </ul>
           </div>
         </div>

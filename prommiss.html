@@ -11,101 +11,102 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="bg-white text-gray-800">
+  <body>
     <!-- navber started -->
     <nav
-      class="sticky top-0 z-50 w-full py-3 bg-tertiary border-b-2 border-black/20 shadow-lg"
-    >
-      <div class="container-fluid">
-        <div class="w-full flex items-center justify-between">
-          <!-- Brand Name -->
-          <h2 class="text-white font-primary text-sm md:text-lg font-semibold">
-            খাইরুল রুম্মান
-          </h2>
+    class="sticky top-0 z-50 w-full py-3 bg-tertiary border-b-2 border-Black/20 shadow-lg"
+  >
+    <div class="container-fluid">
+      <div class="w-full flex items-center justify-between">
+        <!-- Brand Name -->
+        <h2 class="text-white font-primary text-sm md:text-lg font-semibold">
+          খাইরুল রুম্মান
+        </h2>
 
-          <!-- Icons (Light mode + Mobile menu) -->
-          <div class="flex items-center gap-3">
-            <!-- Desktop Menu -->
-            <ul
-              class="hidden md:flex gap-4 text-sm lg:text-md font-secondary mr-4"
-            >
-              <li>
-                <a
-                  class="text-white hover:underline font-secondary"
-                  href="./index.html"
-                  >প্রোফাইল</a
-                >
-              </li>
-              <li>
-                <a
-                  class="text-white hover:underline font-secondary"
-                  href="./about.html"
-                  >সম্পর্কে</a
-                >
-              </li>
-              <li>
-                <a
-                  class="text-white hover:underline font-secondary"
-                  href="./prommiss.html"
-                  >ইশতেহার</a
-                >
-              </li>
-              <li>
-                <a
-                  class="text-white hover:underline font-secondary"
-                  href="./contact.html"
-                  >যোগাযোগ</a
-                >
-              </li>
-            </ul>
-            <!-- Light/Dark mode icon -->
-            <button
-              class="text-md py-1 px-2 text-white rounded-lg border border-white/40 cursor-pointer"
-            >
-              <i class="fa-solid fa-sun"></i>
-            </button>
+        <!-- Icons (Light mode + Mobile menu) -->
+        <div class="flex items-center gap-3">
+          <!-- Desktop Menu -->
+          <ul
+            class="hidden md:flex gap-4 text-sm lg:text-md font-secondary mr-4"
+          >
+            <li>
+              <a
+                class="text-white hover:underline font-secondary"
+                href="./index.html"
+                >প্রোফাইল</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-white hover:underline font-secondary"
+                href="./about.html"
+                >সম্পর্কে</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-white hover:underline font-secondary"
+                href="./prommiss.html"
+                >ইশতেহার</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-white hover:underline font-secondary"
+                href="./contact.html"
+                >যোগাযোগ</a
+              >
+            </li>
+          </ul>
+          <!-- Light/Dark mode icon -->
+          <button
+            id="theme-toggle"
+            class="text-md py-1 px-2 text-white rounded-lg border border-white/40 cursor-pointer"
+          >
+            <i id="theme-icon" class="fa-solid fa-sun"></i>
+          </button>
 
-            <!-- Mobile Menu Button -->
-            <button
-              id="menu-btn"
-              class="md:hidden text-md text-black py-1 px-2 rounded-lg border border-white/40 cursor-pointer"
-            >
-              <span id="open-icon" class="text-white">
-                <i class="fa-solid fa-bars"></i>
-              </span>
-              <span id="close-icon" class="hidden text-lg text-white">
-                <i class="fa-solid fa-xmark"></i>
-              </span>
-            </button>
-          </div>
-        </div>
-
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden flex-col gap-4 mt-3 md:hidden">
-          <a class="text-white font-secondary block mb-3" href="./index.html"
-            >প্রোফাইল</a
+          <!-- Mobile Menu Button -->
+          <button
+            id="menu-btn"
+            class="md:hidden text-md text-Black py-1 px-2 rounded-lg border border-white/40 cursor-pointer"
           >
-          <a class="text-white font-secondary block mb-3" href="./about.html"
-            >সম্পর্কে</a
-          >
-          <a class="text-white font-secondary block mb-3" href="./prommiss.html"
-            >ইশতেহার</a
-          >
-          <a class="text-white font-secondary block" href="./contact.html"
-            >যোগাযোগ</a
-          >
+            <span id="open-icon" class="text-white">
+              <i class="fa-solid fa-bars"></i>
+            </span>
+            <span id="close-icon" class="hidden text-lg text-white">
+              <i class="fa-solid fa-xmark"></i>
+            </span>
+          </button>
         </div>
       </div>
-    </nav>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden flex-col gap-4 mt-3 md:hidden">
+        <a class="text-white font-secondary block mb-3" href="./index.html"
+          >প্রোফাইল</a
+        >
+        <a class="text-white font-secondary block mb-3" href="./about.html"
+          >সম্পর্কে</a
+        >
+        <a class="text-white font-secondary block mb-3" href="./prommiss.html"
+          >ইশতেহার</a
+        >
+        <a class="text-white font-secondary block" href="./contact.html"
+          >যোগাযোগ</a
+        >
+      </div>
+    </div>
+  </nav>
     <!-- navber ended -->
 
     <!-- prommiss section started -->
-    <section class="bg-white py-16">
+    <section class="bg-White py-16">
       <div class="container mx-auto px-4">
         <!-- Section Header -->
         <div class="flex flex-col items-center text-center mb-12">
           <p class="text-gray-500 mb-2">আমার অঙ্গীকারসমূহ</p>
-          <h2 class="text-3xl md:text-4xl font-bold mb-3">
+          <h2 class="text-Black text-3xl md:text-4xl font-bold mb-3">
             ঢাকা বিশ্ববিদ্যালয়ের প্রতি আমার অঙ্গীকারসমূহ
           </h2>
           <p class="text-lg text-gray-600 max-w-2xl">
@@ -124,7 +125,7 @@
               <span
                 class="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-primary/20 text-white text-2xl mr-4"
               >
-              <i class="fa-solid fa-book"></i>
+                <i class="fa-solid fa-book"></i>
               </span>
               <h3 class="text-xl font-semibold mb-2">এক শিক্ষার্থী, এক আইডি</h3>
             </div>
@@ -143,7 +144,7 @@
               <span
                 class="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-primary/20 text-white text-2xl mr-4"
               >
-              <i class="fa-solid fa-book"></i>
+                <i class="fa-solid fa-book"></i>
               </span>
               <h3 class="text-xl font-semibold mb-2">এক শিক্ষার্থী, এক আইডি</h3>
             </div>
@@ -162,7 +163,7 @@
               <span
                 class="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-primary/20 text-white text-2xl mr-4"
               >
-              <i class="fa-solid fa-book"></i>
+                <i class="fa-solid fa-book"></i>
               </span>
               <h3 class="text-xl font-semibold mb-2">এক শিক্ষার্থী, এক আইডি</h3>
             </div>
@@ -198,65 +199,63 @@
     </section>
 
     <!-- Footer Section started -->
-    <footer class="bg-gray-100 py-8">
+    <footer class="bg-Gray-100 py-8">
       <div class="container-fluid">
         <div class="flex flex-col md:flex-row justify-between md:text-left">
           <!-- Left -->
           <div class="mb-8 md:mb-0">
-            <h3 class="text-lg font-bold text-gray-800 mb-4">
+            <h3 class="text-lg font-bold text-Black mb-4">
               আহাদ বিন ইসলাম শোয়ের
             </h3>
             <div class="flex flex-col gap-1">
-              <p class="text-gray-600 hover:text-black">
+              <p class="text-gray-600 hover:text-Black">
                 যুব নেতা, নীতিনির্ধারক, গবেষক, প্রকৌশলী
               </p>
-              <p class="text-gray-600 hover:text-black">
+              <p class="text-gray-600 hover:text-Black">
                 বিজ্ঞান ও প্রযুক্তি সম্পাদক পদে প্রার্থী, ডাকসু ২০২৫
               </p>
             </div>
           </div>
 
           <div class="mb-8 md:mb-0">
-            <h4 class="font-semibold text-gray-800 mb-4">লিংকসমূহ</h4>
+            <h4 class="font-semibold text-Black mb-4">লিংকসমূহ</h4>
             <ul class="flex flex-col text-gray-600 space-y-1">
               <a
-                class="font-secondary text-gray-600 hover:text-black"
+                class="font-secondary text-gray-600 hover:text-Black"
                 href="./index.html"
                 >প্রোফাইল</a
               >
               <a
-                class="font-secondary text-gray-600 hover:text-black"
+                class="font-secondary text-gray-600 hover:text-Black"
                 href="./about.html"
                 >সম্পর্কে</a
               >
               <a
-                class="font-secondary text-gray-600 hover:text-black"
+                class="font-secondary text-gray-600 hover:text-Black"
                 href="./prommiss.html"
                 >ইশতেহার</a
               >
-              <a
-                class="font-secondary text-gray-600 hover:text-black"
-                href="./contact.html"
-                >যোগাযোগ</a
+              <a class="font-secondary text-gray-600 hover:text-Black" href="#"
+                >অ্যচিভমেন্ট</a
               >
             </ul>
           </div>
 
           <!-- Middle -->
           <div class="mb-8 md:mb-0">
-            <h4 class="font-semibold text-gray-800 mb-4">যোগাযোগের তথ্য</h4>
+            <h4 class="font-semibold text-Black mb-4">যোগাযোগের তথ্য</h4>
             <p class="text-gray-600">ফজলুল হক মুসলিম হল, ঢাকা বিশ্ববিদ্যালয়</p>
             <p class="text-gray-600">ahadbinislam1111@gmail.com</p>
             <p class="text-gray-600">+880 1798 343401</p>
           </div>
           <!-- Right -->
           <div class="pr-20">
-            <h4 class="font-semibold text-gray-800 mb-4">কিছু লিংক</h4>
+            <h4 class="font-semibold text-Black mb-4">কিছু লিংক</h4>
             <ul class="text-gray-600 space-y-1">
-              <li><a href="#" class="hover:text-black">গবেষণা</a></li>
-              <li><a href="#" class="hover:text-black">নীতিনির্ধারণ</a></li>
-              <li><a href="#" class="hover:text-black">শিক্ষা</a></li>
-              <li><a href="#" class="hover:text-black">যোগাযোগ</a></li>
+              <li><a href="#" class="hover:text-Black">গবেষণা</a></li>
+              <li><a href="#" class="hover:text-Black">নীতিনির্ধারণ</a></li>
+              <li><a href="#" class="hover:text-Black">শিক্ষা</a></li>
+              <li><a href="#" class="hover:text-Black">যোগাযোগ</a></li>
             </ul>
           </div>
         </div>
