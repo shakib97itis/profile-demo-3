@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dist/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <title>Profile Demo 3</title>
+  </head>
+
+  <body>
+    <!-- navber started -->
+    <nav
+      class="sticky top-0 z-50 w-full py-3 bg-tertiary border-b-2 border-Black/20 shadow-lg"
+    >
+      <div class="container-fluid">
+        <div class="w-full flex items-center justify-between">
+          <!-- Brand Name -->
+          <h2 class="text-white font-primary text-sm md:text-lg font-semibold">
+            খাইরুল রুম্মান
+          </h2>
+
+          <!-- Icons (Light mode + Mobile menu) -->
+          <div class="flex items-center gap-3">
+            <!-- Desktop Menu -->
+            <ul
+              class="hidden md:flex gap-4 text-sm lg:text-md font-secondary mr-4"
+            >
+              <li>
+                <a
+                  class="text-white hover:underline font-secondary"
+                  href="./index.html"
+                  >প্রোফাইল</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-white hover:underline font-secondary"
+                  href="./about.html"
+                  >সম্পর্কে</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-white hover:underline font-secondary"
+                  href="./prommiss.html"
+                  >ইশতেহার</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-white hover:underline font-secondary"
+                  href="./experience.html"
+                  >অভিজ্ঞতা</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-white hover:underline font-secondary"
+                  href="./contact.html"
+                  >যোগাযোগ</a
+                >
+              </li>
+            </ul>
+            <!-- Light/Dark mode icon -->
+            <button
+              id="theme-toggle"
+              class="text-md py-1 px-2 text-white rounded-lg border border-white/40 cursor-pointer"
+            >
+              <i id="theme-icon" class="fa-solid fa-sun"></i>
+            </button>
+
+            <!-- Mobile Menu Button -->
+            <button
+              id="menu-btn"
+              class="md:hidden text-md text-Black py-1 px-2 rounded-lg border border-white/40 cursor-pointer"
+            >
+              <span id="open-icon" class="text-white">
+                <i class="fa-solid fa-bars"></i>
+              </span>
+              <span id="close-icon" class="hidden text-lg text-white">
+                <i class="fa-solid fa-xmark"></i>
+              </span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden flex-col gap-4 mt-3 md:hidden">
+          <a class="text-white font-secondary block mb-3" href="./index.html"
+            >প্রোফাইল</a
+          >
+          <a class="text-white font-secondary block mb-3" href="./about.html"
+            >সম্পর্কে</a
+          >
+          <a class="text-white font-secondary block mb-3" href="./prommiss.html"
+            >ইশতেহার</a
+          >
+          <a class="text-white font-secondary block mb-3" href="./experience.html"
+            >অভিজ্ঞতা</a
+          >
+          <a class="text-white font-secondary block" href="./contact.html"
+            >যোগাযোগ</a
+          >
+        </div>
+      </div>
+    </nav>
+    <!-- navber ended -->
+
+        <!-- work experience section started -->
+        <section class="py-15 bg-White">
+            <div class="container-fluid">
+              <h1 class="text-3xl font-bold text-Black text-center mb-4">
+                আমার পেশাগত অভিজ্ঞতা
+              </h1>
+              <p class="text-center text-gray-600 mb-10">
+                প্রযুক্তি শিল্পে সরাসরি কাজ করার মাধ্যমে আমি যে অভিজ্ঞতা ও দক্ষতা
+                অর্জন করেছি, তা-ই আমার শক্তি
+              </p>
+      
+              <!-- Flex Layout -->
+              <div class="flex flex-wrap flex-col md:flex-row gap-8 md:px-50">
+                <!-- Card 1 -->
+                <div
+                  class="basis-full lg:basis-1/4 bg-Gray-100 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300 flex flex-col h-full border border-Black/20 flex-1"
+                >
+                  <div class="p-6 flex-grow flex flex-col">
+                    <div class="flex items-start gap-3 mb-6">
+                      <span
+                        class="inline-block text-tertiary text-xl md:text-2xl bg-tertiary/20 p-3 rounded-full mb-4 text-center"
+                      >
+                        <i class="fa-solid fa-book-open"></i>
+                      </span>
+                      <div class="flex flex-col items-start">
+                        <h2 class="text-lg text-Black font-bold">
+                          সহ-প্রতিষ্ঠাতা ও প্রধান নির্বাহী কর্মকর্তা
+                        </h2>
+                        <p class="text-gray-600 text-md mb-2">
+                          Academic Affiliation, IT For All
+                        </p>
+                        <span
+                          class="py-1 px-2 bg-Gray-100 text-Black border border-tertiary rounded-xl inline-block"
+                          >2024 - বর্তমান</span
+                        >
+                      </div>
+                    </div>
+                    <p class="text-gray-600 text-sm text-justify">
+                      মোকাররম ভবনের আশেপাশে শিক্ষার্থীদের একটি ভালো ক্যান্টিনের
+                      প্রয়োজন দেখে, আমি একটি নতুন ক্যান্টিন স্থাপনের জন্য উদ্যোগ নিই।
+                      আমরা শুধু মুখেই বলিনি, বরং একটি আনুষ্ঠানিক প্রস্তাব জমা দিয়েছি
+                      এবং দাবিটি বাস্তবায়নের জন্য সচেতনতা তৈরি করেছি।
+                    </p>
+                  </div>
+                </div>
+      
+                <!-- Card 2 -->
+                <div
+                  class="basis-full lg:basis-1/4 bg-Gray-100 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300 flex flex-col h-full border border-Black/20 flex-1"
+                >
+                  <div class="p-6 flex-grow flex flex-col">
+                    <div class="flex items-start gap-3 mb-6">
+                      <span
+                        class="inline-block text-tertiary text-xl md:text-2xl bg-tertiary/20 p-3 rounded-full mb-4 text-center"
+                      >
+                        <i class="fa-solid fa-people-group"></i>
+                      </span>
+                      <div class="flex flex-col items-start">
+                        <h2 class="text-lg text-Black font-bold">
+                          ডেভেলপার ও আইটি কনসালট্যান্ট
+                        </h2>
+                        <p class="text-gray-600 text-md mb-2">
+                          Academic Affiliation, IT For All
+                        </p>
+                        <span
+                          class="py-1 px-2 bg-Gray-100 text-Black border border-tertiary rounded-xl inline-block"
+                          >2024</span
+                        >
+                      </div>
+                    </div>
+                    <p class="text-gray-600 text-sm text-justify">
+                      মোকাররম ভবনের আশেপাশে শিক্ষার্থীদের একটি ভালো ক্যান্টিনের
+                      প্রয়োজন দেখে, আমি একটি নতুন ক্যান্টিন স্থাপনের জন্য উদ্যোগ নিই।
+                      আমরা শুধু মুখেই বলিনি, বরং একটি আনুষ্ঠানিক প্রস্তাব জমা দিয়েছি
+                      এবং দাবিটি বাস্তবায়নের জন্য সচেতনতা তৈরি করেছি।
+                    </p>
+                  </div>
+                </div>
+      
+                <!-- Card 3 -->
+                <div
+                  class="basis-full lg:basis-1/4 bg-Gray-100 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300 flex flex-col h-full border border-Black/20 flex-1"
+                >
+                  <div class="p-6 flex-grow flex flex-col">
+                    <div class="flex items-start gap-3 mb-6">
+                      <span
+                        class="inline-block text-tertiary text-xl md:text-2xl bg-tertiary/20 p-3 rounded-full mb-4 text-center"
+                      >
+                        <i class="fa-solid fa-graduation-cap"></i>
+                      </span>
+                      <div class="flex flex-col items-start">
+                        <h2 class="text-lg text-Black font-bold">
+                          AI Engineer ও Data Scientist
+                        </h2>
+                        <p class="text-gray-600 text-md mb-2">
+                          Academic Affiliation, IT For All
+                        </p>
+                        <span
+                          class="py-1 px-2 bg-Gray-100 text-Black border border-tertiary rounded-xl inline-block"
+                          >2024</span
+                        >
+                      </div>
+                    </div>
+                    <p class="text-gray-600 text-sm text-justify">
+                        মোকাররম ভবনের আশেপাশে শিক্ষার্থীদের একটি ভালো ক্যান্টিনের
+                        প্রয়োজন দেখে, আমি একটি নতুন ক্যান্টিন স্থাপনের জন্য উদ্যোগ নিই।
+                        আমরা শুধু মুখেই বলিনি, বরং একটি আনুষ্ঠানিক প্রস্তাব জমা দিয়েছি
+                        এবং দাবিটি বাস্তবায়নের জন্য সচেতনতা তৈরি করেছি।
+                    </p>
+                  </div>
+                </div>
+                <!-- Card 1 -->
+                <div
+                  class="basis-full lg:basis-1/4 bg-Gray-100 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300 flex flex-col h-full border border-Black/20 flex-1"
+                >
+                  <div class="p-6 flex-grow flex flex-col">
+                    <div class="flex items-start gap-3 mb-6">
+                      <span
+                        class="inline-block text-tertiary text-xl md:text-2xl bg-tertiary/20 p-3 rounded-full mb-4 text-center"
+                      >
+                        <i class="fa-solid fa-book-open"></i>
+                      </span>
+                      <div class="flex flex-col items-start">
+                        <h2 class="text-lg text-Black font-bold">
+                          সহ-প্রতিষ্ঠাতা ও প্রধান নির্বাহী কর্মকর্তা
+                        </h2>
+                        <p class="text-gray-600 text-md mb-2">
+                          Academic Affiliation, IT For All
+                        </p>
+                        <span
+                          class="py-1 px-2 bg-Gray-100 text-Black border border-tertiary rounded-xl inline-block"
+                          >2024 - বর্তমান</span
+                        >
+                      </div>
+                    </div>
+                    <p class="text-gray-600 text-sm text-justify">
+                      মোকাররম ভবনের আশেপাশে শিক্ষার্থীদের একটি ভালো ক্যান্টিনের
+                      প্রয়োজন দেখে, আমি একটি নতুন ক্যান্টিন স্থাপনের জন্য উদ্যোগ নিই।
+                      আমরা শুধু মুখেই বলিনি, বরং একটি আনুষ্ঠানিক প্রস্তাব জমা দিয়েছি
+                      এবং দাবিটি বাস্তবায়নের জন্য সচেতনতা তৈরি করেছি।
+                    </p>
+                  </div>
+                </div>
+      
+                <!-- Card 2 -->
+                <div
+                  class="basis-full lg:basis-1/4 bg-Gray-100 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300 flex flex-col h-full border border-Black/20 flex-1"
+                >
+                  <div class="p-6 flex-grow flex flex-col">
+                    <div class="flex items-start gap-3 mb-6">
+                      <span
+                        class="inline-block text-tertiary text-xl md:text-2xl bg-tertiary/20 p-3 rounded-full mb-4 text-center"
+                      >
+                        <i class="fa-solid fa-people-group"></i>
+                      </span>
+                      <div class="flex flex-col items-start">
+                        <h2 class="text-lg text-Black font-bold">
+                          ডেভেলপার ও আইটি কনসালট্যান্ট
+                        </h2>
+                        <p class="text-gray-600 text-md mb-2">
+                          Academic Affiliation, IT For All
+                        </p>
+                        <span
+                          class="py-1 px-2 bg-Gray-100 text-Black border border-tertiary rounded-xl inline-block"
+                          >2024</span
+                        >
+                      </div>
+                    </div>
+                    <p class="text-gray-600 text-sm text-justify">
+                      মোকাররম ভবনের আশেপাশে শিক্ষার্থীদের একটি ভালো ক্যান্টিনের
+                      প্রয়োজন দেখে, আমি একটি নতুন ক্যান্টিন স্থাপনের জন্য উদ্যোগ নিই।
+                      আমরা শুধু মুখেই বলিনি, বরং একটি আনুষ্ঠানিক প্রস্তাব জমা দিয়েছি
+                      এবং দাবিটি বাস্তবায়নের জন্য সচেতনতা তৈরি করেছি।
+                    </p>
+                  </div>
+                </div>
+      
+                <!-- Card 3 -->
+                <div
+                  class="basis-full lg:basis-1/4 bg-Gray-100 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300 flex flex-col h-full border border-Black/20 flex-1"
+                >
+                  <div class="p-6 flex-grow flex flex-col">
+                    <div class="flex items-start gap-3 mb-6">
+                      <span
+                        class="inline-block text-tertiary text-xl md:text-2xl bg-tertiary/20 p-3 rounded-full mb-4 text-center"
+                      >
+                        <i class="fa-solid fa-graduation-cap"></i>
+                      </span>
+                      <div class="flex flex-col items-start">
+                        <h2 class="text-lg text-Black font-bold">
+                          AI Engineer ও Data Scientist
+                        </h2>
+                        <p class="text-gray-600 text-md mb-2">
+                          Academic Affiliation, IT For All
+                        </p>
+                        <span
+                          class="py-1 px-2 bg-Gray-100 text-Black border border-tertiary rounded-xl inline-block"
+                          >2024</span
+                        >
+                      </div>
+                    </div>
+                    <p class="text-gray-600 text-sm text-justify">
+                        মোকাররম ভবনের আশেপাশে শিক্ষার্থীদের একটি ভালো ক্যান্টিনের
+                        প্রয়োজন দেখে, আমি একটি নতুন ক্যান্টিন স্থাপনের জন্য উদ্যোগ নিই।
+                        আমরা শুধু মুখেই বলিনি, বরং একটি আনুষ্ঠানিক প্রস্তাব জমা দিয়েছি
+                        এবং দাবিটি বাস্তবায়নের জন্য সচেতনতা তৈরি করেছি।
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- work experience section ended -->
+   
+    <!-- Footer Section started -->
+    <footer class="bg-Gray-100 py-8">
+      <div class="container-fluid">
+        <div class="flex flex-col md:flex-row justify-between md:text-left">
+          <!-- Left -->
+          <div class="mb-8 md:mb-0">
+            <h3 class="text-lg font-bold text-Black mb-4">
+              আহাদ বিন ইসলাম শোয়ের
+            </h3>
+            <div class="flex flex-col gap-1">
+              <p class="text-gray-600 hover:text-Black">
+                যুব নেতা, নীতিনির্ধারক, গবেষক, প্রকৌশলী
+              </p>
+              <p class="text-gray-600 hover:text-Black">
+                বিজ্ঞান ও প্রযুক্তি সম্পাদক পদে প্রার্থী, ডাকসু ২০২৫
+              </p>
+            </div>
+          </div>
+
+          <div class="mb-8 md:mb-0">
+            <h4 class="font-semibold text-Black mb-4">লিংকসমূহ</h4>
+            <ul class="flex flex-col text-gray-600 space-y-1">
+              <a
+                class="font-secondary text-gray-600 hover:text-Black"
+                href="./index.html"
+                >প্রোফাইল</a
+              >
+              <a
+                class="font-secondary text-gray-600 hover:text-Black"
+                href="./about.html"
+                >সম্পর্কে</a
+              >
+              <a
+                class="font-secondary text-gray-600 hover:text-Black"
+                href="./prommiss.html"
+                >ইশতেহার</a
+              >
+              <a class="font-secondary text-gray-600 hover:text-Black" href="./experience.html"
+                >অভিজ্ঞতা</a
+              >
+              <a class="font-secondary text-gray-600 hover:text-Black" href="./contact.html"
+                >যোগাযোগ</a
+              >
+            </ul>
+          </div>
+
+          <!-- Middle -->
+          <div class="mb-8 md:mb-0">
+            <h4 class="font-semibold text-Black mb-4">যোগাযোগের তথ্য</h4>
+            <p class="text-gray-600">ফজলুল হক মুসলিম হল, ঢাকা বিশ্ববিদ্যালয়</p>
+            <p class="text-gray-600">ahadbinislam1111@gmail.com</p>
+            <p class="text-gray-600">+880 1798 343401</p>
+          </div>
+          <!-- Right -->
+          <div class="pr-20">
+            <h4 class="font-semibold text-Black mb-4">কিছু লিংক</h4>
+            <ul class="text-gray-600 space-y-1">
+              <li><a href="#" class="hover:text-Black">গবেষণা</a></li>
+              <li><a href="#" class="hover:text-Black">নীতিনির্ধারণ</a></li>
+              <li><a href="#" class="hover:text-Black">শিক্ষা</a></li>
+              <li><a href="#" class="hover:text-Black">যোগাযোগ</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom -->
+      <div class="mt-6 text-center text-gray-500 text-sm border-t pt-8">
+        <p>© ২০২৫ আহাদ বিন ইসলাম শোয়ের. সর্বস্বত্ব সংরক্ষিত।</p>
+        <p>ডাকসু ২০২৫ নির্বাচনী প্রচারণার জন্য নির্মিত</p>
+      </div>
+    </footer>
+    <!-- Footer Section ended -->
+    <script src="./main.js"></script>
+  </body>
+</html>
