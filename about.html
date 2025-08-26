@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="bn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>আহাদ বিন ইসলাম শোয়ের সম্পর্কে</title>
+    <link rel="stylesheet" href="./dist/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- navber started -->
+    <nav
+      class="sticky top-0 z-50 w-full py-3 bg-tertiary border-b-2 border-Black/20 shadow-lg"
+    >
+      <div class="container-fluid">
+        <div class="w-full flex items-center justify-between">
+          <!-- Brand Name -->
+          <h2 class="text-white font-primary text-sm md:text-lg font-semibold">
+            খাইরুল রুম্মান
+          </h2>
+
+          <!-- Icons (Light mode + Mobile menu) -->
+          <div class="flex items-center gap-3">
+            <!-- Desktop Menu -->
+            <ul
+              class="hidden md:flex gap-4 text-sm lg:text-md font-secondary mr-4"
+            >
+              <li>
+                <a
+                  class="text-white hover:underline font-secondary"
+                  href="./index.html"
+                  >প্রোফাইল</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-white hover:underline font-secondary"
+                  href="./about.html"
+                  >সম্পর্কে</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-white hover:underline font-secondary"
+                  href="./prommiss.html"
+                  >ইশতেহার</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-white hover:underline font-secondary"
+                  href="./experience.html"
+                  >অভিজ্ঞতা</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-white hover:underline font-secondary"
+                  href="./contact.html"
+                  >যোগাযোগ</a
+                >
+              </li>
+            </ul>
+            <!-- Light/Dark mode icon -->
+            <button
+              id="theme-toggle"
+              class="text-md py-1 px-2 text-white rounded-lg border border-white/40 cursor-pointer"
+            >
+              <i id="theme-icon" class="fa-solid fa-sun"></i>
+            </button>
+
+            <!-- Mobile Menu Button -->
+            <button
+              id="menu-btn"
+              class="md:hidden text-md text-Black py-1 px-2 rounded-lg border border-white/40 cursor-pointer"
+            >
+              <span id="open-icon" class="text-white">
+                <i class="fa-solid fa-bars"></i>
+              </span>
+              <span id="close-icon" class="hidden text-lg text-white">
+                <i class="fa-solid fa-xmark"></i>
+              </span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden flex-col gap-4 mt-3 md:hidden">
+          <a class="text-white font-secondary block mb-3" href="./index.html"
+            >প্রোফাইল</a
+          >
+          <a class="text-white font-secondary block mb-3" href="./about.html"
+            >সম্পর্কে</a
+          >
+          <a class="text-white font-secondary block mb-3" href="./prommiss.html"
+            >ইশতেহার</a
+          >
+          <a
+            class="text-white font-secondary block mb-3"
+            href="./experience.html"
+            >অভিজ্ঞতা</a
+          >
+          <a class="text-white font-secondary block" href="./contact.html"
+            >যোগাযোগ</a
+          >
+        </div>
+      </div>
+    </nav>
+    <!-- navber ended -->
+    <!-- Main Content Section -->
+    <section class="py-15 bg-White">
+      <div class="container-fluid bg-White">
+        <div class="flex flex-col items-center text-center mb-10">
+          <h1 class="text-3xl text-Black md:text-4xl font-bold mb-2">
+            আহাদ বিন ইসলাম শোয়ের সম্পর্কে
+          </h1>
+          <p class="text-lg text-gray-600">
+            যুব নেতা, নীতি নির্ধারক, গবেষক, প্রকৌশলী
+          </p>
+          <div class="flex flex-col md:flex-row flex-wrap gap-2 mt-4">
+            <span
+              class="px-3 py-1 bg-primary/80 text-secondary rounded-full text-sm"
+              >কল্যাণমুখী সমাজ ও শিক্ষাব্যবস্থা</span
+            >
+            <span
+              class="px-3 py-1 bg-tertiary/20 text-quaternary rounded-full text-sm"
+              >ঢাকা বিশ্ববিদ্যালয় ২০১৬-২০২০</span
+            >
+            <span
+              class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm"
+              >তথ্যপ্রযুক্তি প্রকৌশলী</span
+            >
+          </div>
+        </div>
+
+        <!-- Statement Box -->
+        <div class="bg-Gray-100 border rounded-lg shadow p-6 max-w-4xl mx-auto">
+          <h2 class="text-xl text-Black font-semibold mb-4">
+            ঢাকা বিশ্ববিদ্যালয়ের জন্য আমার দৃষ্টিভঙ্গি
+          </h2>
+          <div class="flex flex-col gap-4 text-justify leading-relaxed">
+            <p class="text-Black">
+              ঢাকা বিশ্ববিদ্যালয়ের শিক্ষার্থী বাহিরে দাঁড়িয়ে থাকতে হতো
+              <span class="font-semibold">ফ্যাসিলিটি এর অভাবে</span>। ঢাকা’র
+              ঐতিহ্যবাহী বিশ্ববিদ্যালয়ের
+              <span class="font-semibold">শিক্ষাব্যবস্থার অগ্রগতির</span>
+              প্রয়োজন ছিল। বিশ্ববিদ্যালয়ের প্রশাসন শিক্ষার্থীদের সাথে আলোচনায়
+              বসতে ব্যর্থ হচ্ছিল সকল বিষয়ে নিয়ে বিশ্ববিদ্যালয়ের পরিবেশকে
+              স্থবির করে তুলেছিল।
+            </p>
+            <p class="text-Black">
+              সরকারের ঘোষিত উদ্যোগগুলো যথা
+              <span class="font-semibold text-secondary">ডিজিটাল বাংলাদেশ</span>
+              ও
+              <span class="font-semibold text-secondary"
+                >স্মার্ট শিক্ষা ব্যবস্থা</span
+              >
+              বাস্তবায়নে বিশ্ববিদ্যালয়ের ভূমিকা অপরিহার্য।
+            </p>
+            <p class="text-Black">
+              আমি বিশ্বাস করি শিক্ষা একটি
+              <span class="font-semibold">অধিকার</span>, এবং শিক্ষার্থীদের জীবন
+              সহজ করতে হলে
+              <span class="font-semibold">ফ্যাসিলিটি উন্নয়ন</span>
+              করা জরুরি।
+            </p>
+            <p class="text-Black">
+              তাই আমি ঢাকা বিশ্ববিদ্যালয়ের শিক্ষার্থীদের পক্ষে দাঁড়াতে চাই এবং
+              <span class="font-semibold text-secondary"
+                >নিরপেক্ষ ও কল্যাণমুখী নেতৃত্ব</span
+              >
+              প্রদান করতে চাই।
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about section ended -->
+
+    <!-- Footer Section started -->
+    <footer class="bg-Gray-100 py-8">
+      <div class="container-fluid">
+        <div class="flex flex-col md:flex-row justify-between md:text-left">
+          <!-- Left -->
+          <div class="mb-8 md:mb-0">
+            <h3 class="text-lg font-bold text-Black mb-4">
+              আহাদ বিন ইসলাম শোয়ের
+            </h3>
+            <div class="flex flex-col gap-1">
+              <p class="text-gray-600 hover:text-Black">
+                যুব নেতা, নীতিনির্ধারক, গবেষক, প্রকৌশলী
+              </p>
+              <p class="text-gray-600 hover:text-Black">
+                বিজ্ঞান ও প্রযুক্তি সম্পাদক পদে প্রার্থী, ডাকসু ২০২৫
+              </p>
+            </div>
+          </div>
+
+          <div class="mb-8 md:mb-0">
+            <h4 class="font-semibold text-Black mb-4">লিংকসমূহ</h4>
+            <ul class="flex flex-col text-gray-600 space-y-1">
+              <a
+                class="font-secondary text-gray-600 hover:text-Black"
+                href="./index.html"
+                >প্রোফাইল</a
+              >
+              <a
+                class="font-secondary text-gray-600 hover:text-Black"
+                href="./about.html"
+                >সম্পর্কে</a
+              >
+              <a
+                class="font-secondary text-gray-600 hover:text-Black"
+                href="./prommiss.html"
+                >ইশতেহার</a
+              >
+              <a
+                class="font-secondary text-gray-600 hover:text-Black"
+                href="./experience.html"
+                >অভিজ্ঞতা</a
+              >
+              <a
+                class="font-secondary text-gray-600 hover:text-Black"
+                href="./contact.html"
+                >যোগাযোগ</a
+              >
+            </ul>
+          </div>
+
+          <!-- Middle -->
+          <div class="mb-8 md:mb-0">
+            <h4 class="font-semibold text-Black mb-4">যোগাযোগের তথ্য</h4>
+            <p class="text-gray-600">ফজলুল হক মুসলিম হল, ঢাকা বিশ্ববিদ্যালয়</p>
+            <p class="text-gray-600">ahadbinislam1111@gmail.com</p>
+            <p class="text-gray-600">+880 1798 343401</p>
+          </div>
+          <!-- Right -->
+          <div class="pr-20">
+            <h4 class="font-semibold text-Black mb-4">কিছু লিংক</h4>
+            <ul class="text-gray-600 space-y-1">
+              <li><a href="#" class="hover:text-Black">গবেষণা</a></li>
+              <li><a href="#" class="hover:text-Black">নীতিনির্ধারণ</a></li>
+              <li><a href="#" class="hover:text-Black">শিক্ষা</a></li>
+              <li><a href="#" class="hover:text-Black">যোগাযোগ</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom -->
+      <div class="mt-6 text-center text-gray-500 text-sm border-t pt-8">
+        <p>© ২০২৫ আহাদ বিন ইসলাম শোয়ের. সর্বস্বত্ব সংরক্ষিত।</p>
+        <p>ডাকসু ২০২৫ নির্বাচনী প্রচারণার জন্য নির্মিত</p>
+      </div>
+    </footer>
+    <!-- Footer Section ended -->
+    <script src="./main.js"></script>
+  </body>
+</html>
